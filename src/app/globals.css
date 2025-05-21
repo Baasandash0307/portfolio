@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 :root {
   --background: #ffffff;
@@ -13,15 +13,38 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #11071f;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Open Sans", sans-serif;
+   font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.your-element {background: radial-gradient(100% 100% at var(--9-x-position) var(--9-y-position), #000000 -38%, transparent),radial-gradient(100% 100% at var(--10-x-position) var(--10-y-position), #616161 -82%, transparent),#000000;animation-name: main; animation-iteration-count: infinite; animation-duration: 10s; transition-timing-function: ease-in;}@property --9-x-position {
+      syntax: '<percentage>';
+        inherits: false;
+        initial-value: 20%;
+      }@property --9-y-position {
+        syntax: '<percentage>';
+          inherits: false;
+          initial-value: 80%;
+        }@property --10-x-position {
+      syntax: '<percentage>';
+        inherits: false;
+        initial-value: 80%;
+      }@property --10-y-position {
+        syntax: '<percentage>';
+          inherits: false;
+          initial-value: 20%;
+        }:root {--4-x-position: 20%;--4-y-position: 80%;--5-x-position: 80%;--5-y-position: 20%;--9-x-position: 20%;--9-y-position: 80%;--10-x-position: 80%;--10-y-position: 20%;}
+    @keyframes main {
+      25% {--9-x-position: 15%;--9-y-position: 15%;--10-x-position: 85%;--10-y-position: 80%;}50% {--9-x-position: 80%;--9-y-position: 15%;--10-x-position: 15%;--10-y-position: 85%;}
+    }
+    
+    
+    
+    
+    
+    
+    
